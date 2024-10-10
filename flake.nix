@@ -19,6 +19,10 @@
           pkgs.tmux
         ];
 
+      fonts.packages = [
+        (pkgs.nerdfonts.override { fonts = [ "Hack" ]; })
+      ];
+
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
