@@ -59,7 +59,6 @@
           "pre-commit"
           "python"
           "go"
-          "lazygit"
           "mas"
         ];
         masApps = {
