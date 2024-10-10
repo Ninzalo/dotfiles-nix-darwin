@@ -32,15 +32,41 @@
       homebrew = {
         enable = true;
         casks = [
+          "db-browser-for-sqlite"
+          "docker"
+          "hyperkey"
+          "jordanbaird-ice"
+          "orbstack"
+          "rectangle"
         ];
         taps = [
+          "arl/arl"
+          "jesseduffield/lazygit"
         ];
         brews = [
+          "gitmux"
+          "fzf"
+          "zoxide"
+          "make"
+          "node"
+          "yarn"
+          "jq"
+          "git"
+          "npm"
+          "gnu-sed"
+          "ripgrep"
+          "jesseduffield/lazygit/lazygit"
+          "pre-commit"
+          "python"
+          "go"
+          "lazygit"
+          "mas"
         ];
         masApps = {
         };
         onActivation.cleanup = "zap";
       };
+
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "Hack" ]; })
       ];
