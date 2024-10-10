@@ -62,6 +62,9 @@
           "mas"
         ];
         masApps = {
+          "V2Box" = 6446814690;
+          "AdGuard" = 1440147259;
+          "SponsorBlock" = 1573461917;
         };
         onActivation.cleanup = "zap";
       };
