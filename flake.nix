@@ -15,6 +15,7 @@
       environment.systemPackages =
         [ 
           pkgs.neovim
+          pkgs.tmux
         ];
 
       # Auto upgrade nix package and the daemon service.
