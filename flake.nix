@@ -95,6 +95,21 @@
           done
         '';
 
+      system.defaults = {
+        dock.autohide = true;
+        dock.persistent-apps = [
+          "/System/Applications/Launchpad.app"
+          "/System/Applications/Messages.app"
+          "/System/Applications/Photos.app"
+          "/System/Applications/Notes.app"
+          "/Applications/Safari.app"
+        ];
+        loginwindow.GuestEnabled = false;
+        NSGlobalDomain.AppleICUForce24HourTime = true;
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
+      };
+
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
