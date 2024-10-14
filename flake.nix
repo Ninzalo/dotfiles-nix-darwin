@@ -27,6 +27,18 @@
           pkgs.mkalias
           pkgs.neovim
           pkgs.tmux
+          pkgs.rectangle
+          pkgs.ice-bar
+          pkgs.gitmux
+          pkgs.fzf
+          pkgs.zoxide
+          pkgs.lazygit
+          pkgs.gnumake
+          pkgs.jq
+          pkgs.gnused
+          pkgs.yarn
+          pkgs.git
+          pkgs.ripgrep
         ];
 
       homebrew = {
@@ -35,27 +47,13 @@
           "db-browser-for-sqlite"
           "docker"
           "hyperkey"
-          "jordanbaird-ice"
           "orbstack"
-          "rectangle"
         ];
         taps = [
-          "arl/arl"
-          "jesseduffield/lazygit"
         ];
         brews = [
-          "gitmux"
-          "fzf"
-          "zoxide"
-          "make"
           "node"
-          "yarn"
-          "jq"
-          "git"
           "npm"
-          "gnu-sed"
-          "ripgrep"
-          "jesseduffield/lazygit/lazygit"
           "pre-commit"
           "python"
           "go"
