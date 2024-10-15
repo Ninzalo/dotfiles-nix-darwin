@@ -21,6 +21,7 @@
     ".config/tmux".source = ~/dotfiles/tmux;
     ".config/neofetch".source = ~/dotfiles/neofetch;
     ".config/nix".source = ~/dotfiles/nix;
+    ".config/gitmux".source = ~/dotfiles/gitmux;
     ".zshrc".source = ~/dotfiles/zsh/.zshrc;
   };
 
