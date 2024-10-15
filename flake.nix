@@ -39,6 +39,7 @@
           pkgs.yarn
           pkgs.git
           pkgs.ripgrep
+          pkgs.stow
         ];
 
       homebrew = {
