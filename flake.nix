@@ -14,9 +14,13 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, home-manager }:
   let
     configuration = { pkgs, config, ... }: {
       # List packages installed in system profile. To search by name, run:
@@ -40,6 +44,7 @@
           pkgs.git
           pkgs.ripgrep
           pkgs.stow
+          pkgs.home-manager
         ];
 
       homebrew = {
@@ -127,6 +132,11 @@
 
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
+
+      users.users.ninzalogg.home = "/Users/ninzalogg";
+      home-manager.backupFileExtension = "backup";
+      nix.configureBuildUsers = true;
+      nix.useDaemon = true;
     };
   in
   {
@@ -147,6 +157,11 @@
             # Automatically migrate existing Homebrew installations
             autoMigrate = true;
           };
+        }
+        home-manager.darwinModules.home-manager {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.ninzalogg = import ./home.nix;
         }
       ];
     };
