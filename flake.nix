@@ -43,6 +43,7 @@
           pkgs.ripgrep
           pkgs.stow
           pkgs.home-manager
+          pkgs.wget
         ];
 
       homebrew = {
