@@ -31,7 +31,6 @@
           pkgs.tmux
           pkgs.rectangle
           pkgs.ice-bar
-          pkgs.gitmux
           pkgs.fzf
           pkgs.zoxide
           pkgs.lazygit
@@ -55,8 +54,10 @@
           "orbstack"
         ];
         taps = [
+          "arl/arl"
         ];
         brews = [
+          "gitmux"
           "node"
           "npm"
           "pre-commit"
