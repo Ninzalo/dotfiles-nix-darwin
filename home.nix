@@ -13,7 +13,6 @@
     ".config/nix-darwin".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/nix-darwin;
     ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/nvim;
     ".config/tmux".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/tmux;
-    ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/neofetch;
     ".config/nix".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/nix;
     ".config/gitmux".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/gitmux;
     ".zshrc".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/zsh/.zshrc;
