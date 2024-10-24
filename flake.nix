@@ -40,6 +40,7 @@
           pkgs.yarn
           pkgs.git
           pkgs.ripgrep
+          pkgs.gnugrep
           pkgs.stow
           pkgs.home-manager
           pkgs.wget
