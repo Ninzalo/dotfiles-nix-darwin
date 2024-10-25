@@ -66,6 +66,8 @@
           "python"
           "go"
           "mas"
+          "zsh-autosuggestions"
+          "zsh-syntax-highlighting"
         ];
         masApps = {
           "AdGuard" = 1440147259;
