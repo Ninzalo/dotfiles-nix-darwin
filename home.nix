@@ -16,6 +16,7 @@
     ".config/nix".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/nix;
     ".config/gitmux".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/gitmux;
     ".zshrc".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/zsh/.zshrc;
+    ".p10k.zsh".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/p10k/.p10k.zsh;
   };
 
   home.sessionVariables = {
