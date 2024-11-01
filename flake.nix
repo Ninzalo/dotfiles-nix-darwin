@@ -45,6 +45,7 @@
           pkgs.home-manager
           pkgs.wget
           pkgs.zsh-powerlevel10k
+          pkgs.eza
         ];
 
       homebrew = {
