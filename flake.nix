@@ -46,6 +46,7 @@
           pkgs.wget
           pkgs.zsh-powerlevel10k
           pkgs.eza
+          pkgs.python313
         ];
 
       homebrew = {
