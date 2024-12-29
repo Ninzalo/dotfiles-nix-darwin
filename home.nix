@@ -10,6 +10,7 @@
 
   home.file = {
     ".config/alacritty".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/alacritty;
+    ".config/ghostty".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/ghostty;
     ".config/nix-darwin".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/nix-darwin;
     ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/nvim;
     ".config/tmux".source = config.lib.file.mkOutOfStoreSymlink ~/dotfiles/tmux;
