@@ -26,6 +26,7 @@
       environment.systemPackages =
         [ 
           pkgs.alacritty
+          pkgs.ghostty
           pkgs.mkalias
           pkgs.neovim
           pkgs.tmux
