@@ -56,7 +56,6 @@
           "docker"
           "hyperkey"
           "orbstack"
-          "ghostty"
         ];
         taps = [
           "arl/arl"
