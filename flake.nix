@@ -65,6 +65,7 @@
           "gitmux"
           "node"
           "npm"
+          "nmap"
           "pre-commit"
           "python"
           "go"
