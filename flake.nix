@@ -121,7 +121,7 @@
         NSGlobalDomain.KeyRepeat = 2;
       };
 
-      services.nix-daemon.enable = true;
+      # services.nix-daemon.enable = true;
       nix.settings.experimental-features = "nix-command flakes";
       programs.zsh.enable = true;  # default shell on catalina
       programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
@@ -132,8 +132,8 @@
 
       users.users.ninzalogg.home = "/Users/ninzalogg";
       home-manager.backupFileExtension = "backup";
-      nix.configureBuildUsers = true;
-      nix.useDaemon = true;
+      # nix.configureBuildUsers = true;
+      # nix.useDaemon = true;
     };
   in
   {
