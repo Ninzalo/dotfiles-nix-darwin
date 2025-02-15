@@ -48,6 +48,7 @@
           pkgs.zsh-powerlevel10k
           pkgs.eza
           pkgs.python313
+          pkgs.sshpass
         ];
 
       homebrew = {
