@@ -49,6 +49,7 @@
           pkgs.eza
           pkgs.python313
           pkgs.sshpass
+          pkgs.poetry
         ];
 
       homebrew = {
