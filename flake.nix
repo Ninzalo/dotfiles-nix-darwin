@@ -26,7 +26,7 @@
       environment.systemPackages =
         [ 
           pkgs.alacritty
-          pkgs.ghostty
+          # pkgs.ghostty
           pkgs.mkalias
           pkgs.neovim
           pkgs.tmux
@@ -57,6 +57,7 @@
           "docker"
           "hyperkey"
           "orbstack"
+          "ghostty"
         ];
         taps = [
           "arl/arl"
