@@ -131,7 +131,6 @@
       system.configurationRevision = self.rev or self.dirtyRev or null;
       system.stateVersion = 5;
       nixpkgs.hostPlatform = "aarch64-darwin";
-      security.pam.enableSudoTouchIdAuth = true;
 
       users.users.ninzalogg.home = "/Users/ninzalogg";
       home-manager.backupFileExtension = "backup";
